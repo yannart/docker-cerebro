@@ -1,0 +1,37 @@
+version: '2'
+services:
+
+  # Cerebro Elasticsearch client
+  cerebro:
+    build: .
+    ports:
+      - "9000:9000"
+    networks:
+      - app_net
+
+  # Elasticsearch cluster
+  elasticsearch:
+    image: elasticsearch:5.0.0
+    command: -E node.name="es1" -E discovery.zen.ping.unicast.hosts="elasticsearch2:9301"
+    environment:
+      ES_JAVA_OPTS: -Xms750m -Xmx750m
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    networks:
+      - app_net
+
+  elasticsearch2:
+    image: elasticsearch:5.0.0
+    command: -E node.name="es2" -E discovery.zen.ping.unicast.hosts="elasticsearch:9300"
+    environment:
+      ES_JAVA_OPTS: -Xms750m -Xmx750m
+    ports:
+      - "9201:9200"
+      - "9301:9300"
+    networks:
+      - app_net
+
+networks:
+  app_net:
+    driver: bridge
