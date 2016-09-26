@@ -3,7 +3,7 @@ Docker image to run cerebro [Elasticsearch 5.x](https://www.elastic.co/products/
 
 Cerebro project: https://github.com/lmenezes/cerebro
 
-This Docker image is built in available in Docker hub [yannart/cerebro:latest](https://hub.docker.com/r/yannart/cerebro/)
+This Docker image is built and available in Docker hub [yannart/cerebro:latest](https://hub.docker.com/r/yannart/cerebro/)
 
 ### Docker Tags
 
