@@ -5,6 +5,13 @@ Cerebro project: https://github.com/lmenezes/cerebro
 
 This Docker image is built in available in Docker hub `yannart/cerebro:latest`, see https://hub.docker.com/r/yannart/cerebro/
 
+### Docker Tags
+
+`yannart/cerebro` provides multiple tagged images:
+
+* `latest` (default): Latest version of Cerebro.
+* `0.2.0`: Cerebro 0.2.0
+
 ## Usage
 To run the image:
 `docker run -d -p 9000:9000 --name cerebro yannart/cerebro:latest`
