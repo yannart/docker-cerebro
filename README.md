@@ -1,5 +1,7 @@
 ## Description
-Docker image to run cerebro elasticsearch web admin tool.
+Docker image to run cerebro elasticsearch web admin tool (replaces Kopf).
+
+Cerebro project: https://github.com/lmenezes/cerebro
 
 This Docker image is built in available in Docker hub `yannart/cerebro:latest`, see https://hub.docker.com/r/yannart/cerebro/
 
