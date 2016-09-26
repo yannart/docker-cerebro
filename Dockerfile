@@ -15,7 +15,9 @@ RUN set -x \
 ENV CEREBRO_VERSION 0.2.0
 RUN cd /opt/ \
     && wget -O cerebro-${CEREBRO_VERSION}.tgz https://github.com/lmenezes/cerebro/releases/download/v${CEREBRO_VERSION}/cerebro-${CEREBRO_VERSION}.tgz \
-    && tar zxvf cerebro-${CEREBRO_VERSION}.tgz
+    && tar zxvf cerebro-${CEREBRO_VERSION}.tgz \
+	&& rm cerebro-${CEREBRO_VERSION}.tgz \
+	&& mkdir cerebro-${CEREBRO_VERSION}/logs
 
 WORKDIR /opt/cerebro-${CEREBRO_VERSION}
 EXPOSE 9000
