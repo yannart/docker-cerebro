@@ -1,9 +1,9 @@
 ## Description
-Docker image to run cerebro elasticsearch web admin tool (replaces Kopf).
+Docker image to run cerebro [Elasticsearch 5.x](https://www.elastic.co/products/elasticsearch) web admin tool that replaces [Kopf](https://github.com/lmenezes/elasticsearch-kopf).
 
 Cerebro project: https://github.com/lmenezes/cerebro
 
-This Docker image is built in available in Docker hub `yannart/cerebro:latest`, see https://hub.docker.com/r/yannart/cerebro/
+This Docker image is built in available in Docker hub [yannart/cerebro:latest](https://hub.docker.com/r/yannart/cerebro/)
 
 ### Docker Tags
 
@@ -26,7 +26,7 @@ Where `/mount_folder` is a folder in the Docker host to contain the data. If mou
 
 ## Docker-compose example
 
-The provided docker-compose project runs cerebro and a cluster 2 nodes with Elasticsearch 5.0.0.
+A docker-compose project is available in the [GitHub](https://github.com/yannart/docker-cerebro) project to run cerebro and a cluster 2 nodes with Elasticsearch 5.0.0.
 Tu run it:
 `docker-compose up -d`
 
