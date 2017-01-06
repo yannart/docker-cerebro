@@ -4,6 +4,10 @@ services:
   # Cerebro Elasticsearch client
   cerebro:
     build: .
+
+    # Instead of building the image locally,  can use:
+    # image: yannart/cerebro:0.4.2
+
     ports:
       - "9000:9000"
     networks:
