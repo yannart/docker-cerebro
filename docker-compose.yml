@@ -11,8 +11,8 @@ services:
 
   # Elasticsearch cluster
   elasticsearch:
-    image: elasticsearch:5.0.0
-    command: -E node.name="es1" -E discovery.zen.ping.unicast.hosts="elasticsearch2:9301" -E bootstrap.ignore_system_bootstrap_checks=true
+    image: elasticsearch:5.1.1
+    command: -E node.name="es1" -E discovery.zen.ping.unicast.hosts="elasticsearch2:9300"
     environment:
       ES_JAVA_OPTS: -Xms750m -Xmx750m
     ports:
@@ -22,8 +22,8 @@ services:
       - app_net
 
   elasticsearch2:
-    image: elasticsearch:5.0.0
-    command: -E node.name="es2" -E discovery.zen.ping.unicast.hosts="elasticsearch:9300" -E bootstrap.ignore_system_bootstrap_checks=true
+    image: elasticsearch:5.1.1
+    command: -E node.name="es2" -E discovery.zen.ping.unicast.hosts="elasticsearch:9300"
     environment:
       ES_JAVA_OPTS: -Xms750m -Xmx750m
     ports:

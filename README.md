@@ -10,7 +10,7 @@ This Docker image is built and available in Docker hub [yannart/cerebro:latest](
 `yannart/cerebro` provides multiple tagged images:
 
 * `latest` (default): Latest version of Cerebro.
-* `0.2.0`: Cerebro 0.2.0
+* `0.4.2`: Cerebro 0.4.2
 
 ## Usage
 To run the image:
@@ -20,14 +20,14 @@ Then you can access the web console in this URL: http://[Docker_Host]:9000
 
 You can mount volumes for the configuration folder and / the logs, for example:
 
-`docker run -d -p 9000:9000 --name cerebro -v /mount_folder/logs:/opt/cerebro-0.2.0/logs -v /mount_folder/conf:/opt/cerebro-0.2.0/conf yannart/cerebro:latest`
+`docker run -d -p 9000:9000 --name cerebro -v /mount_folder/logs:/opt/cerebro-0.4.2/logs -v /mount_folder/conf:/opt/cerebro-0.4.2/conf yannart/cerebro:latest`
 
-Where `/mount_folder` is a folder in the Docker host to contain the data. If mounted, the volume `/opt/cerebro-0.2.0/conf` must contain a valid configuration.
+Where `/mount_folder` is a folder in the Docker host to contain the data. If mounted, the volume `/opt/cerebro-0.4.2/conf` must contain a valid configuration.
 
 ## Docker-compose example
 
-A docker-compose project is available in the [GitHub](https://github.com/yannart/docker-cerebro) project to run cerebro and a cluster 2 nodes with Elasticsearch 5.0.0.
-Tu run it:
+A docker-compose project is available in the [GitHub](https://github.com/yannart/docker-cerebro) project to run cerebro and a cluster 2 nodes with Elasticsearch 5.1.1.
+To run it:
 `docker-compose up -d`
 
-Then you can access the web console in this URL: http://[Docker_Host]:9000 and connect to the Elasticsearch cluster using the URL `http://elasticsearch:9300` or `http://elasticsearch2:9301` in the hosts input field.
+Then you can access the web console in this URL: http://[Docker_Host]:9000 and connect to the Elasticsearch cluster using the URL `http://elasticsearch:9200` or `http://elasticsearch2:9201` in the hosts input field.
