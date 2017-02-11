@@ -6,7 +6,7 @@ services:
     build: .
 
     # Instead of building the image locally,  can use:
-    # image: yannart/cerebro:0.5.0
+    # image: yannart/cerebro:latest
 
     ports:
       - "9000:9000"
