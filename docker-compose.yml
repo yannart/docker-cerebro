@@ -15,7 +15,7 @@ services:
 
   # Elasticsearch cluster
   elasticsearch:
-    image: elasticsearch:5.2-alpine
+    image: elasticsearch:5.3-alpine
     command: -E node.name="es1" -E discovery.zen.ping.unicast.hosts="elasticsearch2:9300" -E transport.host="0.0.0.0" -E discovery.zen.minimum_master_nodes=1
     environment:
       ES_JAVA_OPTS: -Xms750m -Xmx750m
@@ -26,7 +26,7 @@ services:
       - app_net
 
   elasticsearch2:
-    image: elasticsearch:5.2-alpine
+    image: elasticsearch:5.3-alpine
     command: -E node.name="es2" -E discovery.zen.ping.unicast.hosts="elasticsearch:9300" -E transport.host="0.0.0.0" -E discovery.zen.minimum_master_nodes=1
     environment:
       ES_JAVA_OPTS: -Xms750m -Xmx750m
