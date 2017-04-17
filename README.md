@@ -10,6 +10,7 @@ This Docker image is built and available in Docker hub [yannart/cerebro:latest](
 `yannart/cerebro` provides multiple tagged images:
 
 * `latest` (default): Latest version of Cerebro.
+* `0.6.5`: Cerebro 0.6.5
 * `0.6.4`: Cerebro 0.6.4
 
 ## Usage
@@ -29,5 +30,8 @@ Where `/mount_folder` is a folder in the Docker host to contain the data. If mou
 A docker-compose project is available in the [GitHub](https://github.com/yannart/docker-cerebro) project to run cerebro and a cluster 2 nodes with Elasticsearch 5.x.
 To run it:
 `docker-compose up -d`
+
+If you were running a previous version of the project and want to force a build, run first:
+`docker-compose build`
 
 Then you can access the web console in this URL: http://[Docker_Host]:9000 and connect to the Elasticsearch cluster using the URL `http://elasticsearch:9200` or `http://elasticsearch2:9201` in the hosts input field.
