@@ -34,4 +34,4 @@ To run it:
 If you were running a previous version of the project and want to force a build, run first:
 `docker-compose build`
 
-Then you can access the web console in this URL: http://[Docker_Host]:9000 and connect to the Elasticsearch cluster using the URL `http://elasticsearch:9200` or `http://elasticsearch2:9201` in the hosts input field.
+Then you can access the web console in this URL: http://[Docker_Host]:9000 and connect to the Elasticsearch cluster using the URL `http://elasticsearch:9200` or `http://elasticsearch2:9200` in the hosts input field, the user `elastic` and password `chnageme`.
