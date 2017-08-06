@@ -10,6 +10,7 @@ This Docker image is built and available in Docker hub [yannart/cerebro:latest](
 `yannart/cerebro` provides multiple tagged images:
 
 * `latest` (default): Latest version of Cerebro.
+* `0.6.6`: Cerebro 0.6.5
 * `0.6.5`: Cerebro 0.6.5
 * `0.6.4`: Cerebro 0.6.4
 
