@@ -1,5 +1,5 @@
 ## Description
-Docker image to run cerebro [Elasticsearch 5.x](https://www.elastic.co/products/elasticsearch) web admin tool that replaces [Kopf](https://github.com/lmenezes/elasticsearch-kopf).
+Docker image to run cerebro [Elasticsearch 6.x](https://www.elastic.co/products/elasticsearch) web admin tool that replaces [Kopf](https://github.com/lmenezes/elasticsearch-kopf).
 
 Cerebro project: https://github.com/lmenezes/cerebro
 
@@ -29,7 +29,7 @@ Where `/mount_folder` is a folder in the Docker host to contain the data. If mou
 
 ## Docker-compose example
 
-A docker-compose project is available in the [GitHub](https://github.com/yannart/docker-cerebro) project to run cerebro and a cluster 2 nodes with Elasticsearch 5.x.
+A docker-compose project is available in the [GitHub](https://github.com/yannart/docker-cerebro) project to run cerebro and a cluster 2 nodes with Elasticsearch 6.x.
 To run it:
 `docker-compose up -d`
 
