@@ -12,7 +12,7 @@ RUN set -x \
 	&& chmod +x /usr/local/bin/gosu \
 	&& gosu nobody true
 
-ENV CEREBRO_VERSION 0.6.6
+ENV CEREBRO_VERSION 0.7.2
 RUN cd /opt/ \
     && wget -O cerebro-${CEREBRO_VERSION}.tgz https://github.com/lmenezes/cerebro/releases/download/v${CEREBRO_VERSION}/cerebro-${CEREBRO_VERSION}.tgz \
     && tar zxvf cerebro-${CEREBRO_VERSION}.tgz \
