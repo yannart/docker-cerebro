@@ -10,4 +10,4 @@ RUN cd /opt/ \
 
 WORKDIR /opt/cerebro
 EXPOSE 9000
-CMD ["rm -rf ./RUNNING_PID && ./bin/cerebro"]
+CMD ["./bin/cerebro"]
